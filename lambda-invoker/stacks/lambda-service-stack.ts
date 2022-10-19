@@ -10,7 +10,6 @@ import { SqsEventSource } from 'aws-cdk-lib/aws-lambda-event-sources';
 export class LambdaServicesStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps, contextEnv?: EnvironmentConfig) {
     super(scope, id, props);
-    const stackConstructPrefix = this.stackName;
 
     const eventSourceQueue = sqs.Queue.fromQueueArn(
       this,
