@@ -7,7 +7,10 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
+    "test": "jest --coverage",
+    "testwatch": "jest --watch",
+    "lint:fix": "eslint --fix src --ext .ts --ext .js",
+    "lint": "eslint src --ext .ts --ext .js",
     "cdk": "cdk"
   },
   "devDependencies": {
